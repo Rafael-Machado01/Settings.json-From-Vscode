@@ -1,8 +1,7 @@
 ## Minhas configurações do Visual Studio Code WINDOWS
 
-  Base Da Rockeatseat e Editada.
                 //
-Rockeatseat Base and Edited.
+ Base and Edited.
 
 ## Como instalar em seu vscode?
 Ctrl + shift + p
