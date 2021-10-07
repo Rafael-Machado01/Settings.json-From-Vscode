@@ -1,158 +1,208 @@
 {
-  "terminal.integrated.fontSize": 14,
-
-  "python.defaultInterpreterPath": "C:\\Program Files\\Python39\\python.exe",
-  "workbench.colorTheme": "Eva Dark Italic",
-  "workbench.productIconTheme": "material-product-icons",
-
+  // Workbench
   "workbench.startupEditor": "newUntitledFile",
-
-  "polacode.backgroundColor": "#6633CC",
-  
-  "editor.tabSize": 2,
-  "editor.fontSize": 16,
-  "editor.lineHeight": 26,
-  "editor.fontLigatures": true,
-  "editor.semanticHighlighting.enabled": false,
-
-  "explorer.compactFolders": false,
-  "editor.renderLineHighlight": "gutter",
+  "workbench.colorTheme": "Eva Dark Italic",
   "workbench.editor.labelFormat": "short",
-  "extensions.ignoreRecommendations": true,
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.editor.enablePreview": false,
+  "polacode.backgroundColor": "#6633CC",
+  "workbench.sideBar.location": "left",
+  "window.menuBarVisibility": "toggle",
+  "workbench.list.smoothScrolling": true,
 
-  "breadcrumbs.enabled": true,
-  "editor.parameterHints.enabled": false,
+  // Explorer
+  "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  
-  "editor.rulers": [80, 120],
-  
+  // Editor and breadcrumbs
+  "breadcrumbs.enabled": true,
+  "editor.renderControlCharacters": false,
+  "editor.tabSize": 2,
+  "editor.renderLineHighlight": "gutter",
+  "editor.rulers": [79, 120],
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 20,
+  "editor.detectIndentation": true,
+  "editor.snippetSuggestions": "top",
+  "editor.wordBasedSuggestions": false,
+  "editor.suggest.localityBonus": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.formatOnPaste": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.mouseWheelScrollSensitivity": 2,
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelZoom": true,
+  "editor.linkedEditing": true,
+  "editor.fontFamily": "'Operator Mono Lig Book', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
+  "editor.glyphMargin": false,
+  "editor.fontLigatures": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll": true
   },
+  "editor.suggestSelection": "first",
 
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    // "**/node_modules": true
-  },
-
-  "[prisma]": {
-    "editor.formatOnSave": true
-  },
-
-  "files.associations": {
-    ".sequelizerc": "javascript",
-    ".stylelintrc": "json",
-    ".prettierrc": "json",
-    "*.tsx": "typescriptreact",
-    ".env.*": "dotenv"
-  },
-
-  "emmet.syntaxProfiles": { "javascript": "jsx" },
-  "emmet.includeLanguages": { "javascript": "javascriptreact" },
-
-  
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-
+  // Git
   "git.enableSmartCommit": true,
-  "liveshare.featureSet": "insiders", 
+  "diffEditor.ignoreTrimWhitespace": true,
 
-  "typescript.tsserver.log": "off",
+  // Debug
+  "debug.console.fontSize": 18,
+
+  // Files and search
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "files.exclude": {
+    "USE_GITIGNORE": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
+
+  // Terminal
+  "terminal.integrated.copyOnSelection": false,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.shell.linux": "zsh",
+  "terminal.external.linuxExec": "x-terminal-emulator",
+  "terminal.integrated.fontFamily": "'Operator Mono Lig Book', 'Fira Code', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.enableFileLinks": false,
+  "terminal.integrated.env.linux": {
+    // "PORT": "4000"
+  },
+
+  // Javascript & TypeScript
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
-  "material-icon-theme.activeIconPack": "nest",
-  "screencastMode.onlyKeyboardShortcuts": true,
-
-  "material-icon-theme.folders.associations": {
-    "infra": "app",
-    "entities": "class",
-    "domain": "class",
-    "schemas": "class",
-    "typeorm": "database",
-    "repositories": "mappings",
-    "http": "container",
-    "migrations": "tools",
-    "modules": "components",
-    "implementations": "core",
-    "dtos": "typescript",
-    "fakes": "mock",
-    "websockets": "pipe",
-    "protos": "pipe",
-    "grpc": "pipe",
-    "providers": "include",
-    "subscribers": "messages",
-    "useCases": "controller",
-    "kafka": "scripts",
-    "mappers": "meta",
-    "_shared": "shared",
-    "eslint-config": "tools",
-    "kube": "kubernetes"
+  "[javascript]": {
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
   },
 
-  "material-icon-theme.files.associations": {
-    "ormconfig.json": "database",
-    "tsconfig.json": "tune",
-    "*.proto": "3d",
-    "*.webpack.js": "webpack"
+  // Python
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "python.formatting.autopep8Args": [
+    "--indent-size=4"
+    // "--ignore=E111",
+  ],
+  "python.linting.flake8Args": [
+    // "--ignore=E111",
+  ],
+  "python.linting.pylintArgs": [
+    "--load-plugins=pylint_django",
+    "--errors-only"
+  ],
+  "python.pythonPath": "/bin/python3.8",
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.testing.unittestEnabled": true,
+
+  // Django
+  "files.associations": {
+    "*.html": "html",
+    "**/templates/*.html": "django-html",
+    "**/templates/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
 
-  "material-icon-theme.languages.associations": {
-    "dotenv": "tune"
+  // Emmet
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
   },
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "tabnine.experimentalAutoImports": true,
-  "cSpell.enableFiletypes": [
-    "!asciidoc",
-    "!c",
-    "!cpp",
-    "!csharp",
-    "!go",
-    "!handlebars",
-    "!haskell",
-    "!jade",
-    "!java",
-    "!latex",
-    "!php",
-    "!pug",
-    "!python",
-    "!restructuredtext",
-    "!rust",
-    "!scala",
-    "!scss"
-  ],
-  "cSpell.language": "en,pt",
-  "editor.suggestSelection": "first",
-  "codesnap.backgroundColor": "transparent",
-  "codesnap.transparentBackground": true,
-  "codesnap.boxShadow": "0 0 0",
-  "liveServer.settings.donotVerifyTags": true,
-  "cSpell.userWords": [
-    "chakra",
-    "middlewares",
-    "prefetch",
-    "rocketseat",
-    "upsert"
-  ],
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.showExitAlert": false,
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "material-icon-theme.hidesExplorerArrows": true,
 
-  "splitHTMLAttributes.closingBracketOnNewLine": true,
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]"
+  "redhat.telemetry.enabled": true,
+  // Code runner
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.preserveFocus": false,
+  "code-runner.executorMap": {
+    "python": "python3 -u",
+    "typescript": "npx ts-node --files --transpile-only"
+  },
+  // Colorize (in big files you may want to disable this)
+  "colorize.hide_current_line_decorations": false,
+  "colorize.include": [".tsx", ".jsx", ".ts", ".js"],
+  "colorize.languages": [
+    "typescriptreact",
+    "javascriptreact",
+    "javascript",
+    "typescript",
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "pcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg",
+    "json",
+    "jsonc",
+    "yaml"
   ],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "window.zoomLevel": 0
+  "colorize.colorized_colors": [
+    // "BROWSERS_COLORS", // this is reaaally annoying
+    "HEXA",
+    "RGB",
+    "HSL"
+  ],
+  "colorize.enable_search_variables": false,
+
+  // CSpell checker extension
+  "cSpell.enabled": true,
+  "cSpell.language": "en,pt,pt_BR",
+  "cSpell.enableFiletypes": ["shellscript"],
+  "cSpell.customUserDictionaries": [
+    {
+      "name": "Custom",
+      "description": "Custom CSpell Dict",
+      "path": "~/Development/custom-cspell-dictionary.txt",
+      "addWords": false
+    }
+  ],
+
+  // VsCode Action Buttons
+  "actionButtons": {
+    "defaultColor": "#8be9fd", // Can also use string color names.
+    "loadNpmCommands": false, // Disables automatic generation of actions for npm commands.
+    "reloadButton": "🗘", // Custom reload button text or icon (default ↻). null value enables automatic reload on configuration change
+    "commands": [
+      {
+        "cwd": "./", // Terminal initial folder ${workspaceFolder} and os user home as defaults
+        "name": "Open dictionary",
+        "color": "#8be9fd",
+        "singleInstance": true,
+        "command": "code -r ~/Development/custom-cspell-dictionary.txt; exit" // This is executed in the terminal.
+      }
+    ]
+  },
+  "window.zoomLevel": -1
 }
