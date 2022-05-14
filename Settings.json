@@ -1,16 +1,17 @@
 {
-  // Workbench
+  // Configurações da fonte JetBrains Mono
+  "editor.fontFamily": " Firacode,'",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 26,
+  "editor.semanticHighlighting.enabled": false,
+  "workbench.colorTheme": "Omni",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Eva Dark Italic",
   "workbench.editor.labelFormat": "short",
-  "workbench.productIconTheme": "material-product-icons",
   "workbench.editor.enablePreview": false,
-  "polacode.backgroundColor": "#6633CC",
   "workbench.sideBar.location": "left",
   "window.menuBarVisibility": "toggle",
   "workbench.list.smoothScrolling": true,
 
-  // Explorer
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -21,7 +22,7 @@
   "editor.renderLineHighlight": "gutter",
   "editor.rulers": [79, 120],
   "editor.minimap.enabled": false,
-  "editor.fontSize": 20,
+  "editor.fontSize": 22,
   "editor.detectIndentation": true,
   "editor.snippetSuggestions": "top",
   "editor.wordBasedSuggestions": false,
@@ -33,9 +34,7 @@
   "editor.smoothScrolling": true,
   "editor.mouseWheelZoom": true,
   "editor.linkedEditing": true,
-  "editor.fontFamily": "'Operator Mono Lig Book', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
   "editor.glyphMargin": false,
-  "editor.fontLigatures": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -69,17 +68,11 @@
   // Terminal
   "terminal.integrated.copyOnSelection": false,
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.shell.linux": "zsh",
-  "terminal.external.linuxExec": "x-terminal-emulator",
-  "terminal.integrated.fontFamily": "'Operator Mono Lig Book', 'Fira Code', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 12,
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.enableFileLinks": false,
-  "terminal.integrated.env.linux": {
-    // "PORT": "4000"
-  },
-
   // Javascript & TypeScript
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
@@ -204,5 +197,6 @@
       }
     ]
   },
-  "window.zoomLevel": -1
+  "workbench.iconTheme": "material-icon-theme",
+  "bracketPairColorizer.depreciation-notice": false
 }
